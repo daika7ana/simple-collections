@@ -13,7 +13,7 @@ vendor/bin/phpunit tests/Unit/CollectionTest.php
 
 - phpstan analyses `src` only (level 8); tests are not type-checked.
 - PHPUnit 12 with `failOnWarning`/`failOnRisky`. Prefer `assertSame`; there is no loose `assertEquals` in the suite. Use the dedicated assertion for booleans, nulls, counts, and instances.
-- The directory is not a git repo and has no CI or Packagist release. `composer validate --strict` passes.
+- The repo is public at github.com/daika7ana/simple-collections; no CI workflow and no Packagist release yet. `composer validate --strict` passes.
 
 ## Layout
 
