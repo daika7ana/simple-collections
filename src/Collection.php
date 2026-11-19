@@ -698,7 +698,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
 
     /**
      * @param  array<int, int|string>|int|string  $keys
-     * @return static<array-key, TValue>
+     * @return static<TKey, TValue>
      */
     public function only(array|int|string $keys): static
     {
@@ -712,7 +712,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
             }
         }
 
-        /** @var static<array-key, TValue> $collection */
+        /** @var static<TKey, TValue> $collection */
         $collection = new static($result);
 
         return $collection;
